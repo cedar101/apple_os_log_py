@@ -23,7 +23,8 @@ void _os_log_debug(os_log_t log, const char *str);
 void _os_log_error(os_log_t log, const char *str);
 void _os_log_fault(os_log_t log, const char *str);
 void _os_log_with_type(os_log_t log, os_log_type_t type, const char *str);
+void os_release(void *object);
 ''')
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # not when running with setuptools
     ffibuilder.compile(verbose=True)

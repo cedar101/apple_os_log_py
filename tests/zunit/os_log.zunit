@@ -1,0 +1,12 @@
+#!/usr/bin/env zunit
+
+@test 'read first line' {
+	read line
+	assert "$line" contains 'Filtering'
+}
+
+@test 'default logger' {
+	python -m os_log.loguru info 'Hello'
+	read line
+	assert "$line" contains 'INFO'
+}

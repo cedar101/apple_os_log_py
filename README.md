@@ -1,2 +1,2 @@
-# os_log_py
-Python wrapper of os_log in Apple's Unified Logging System
+# apple_os_log_py
+Python wrapper for os_log (C API of Apple's Unified Logging System) using CFFI

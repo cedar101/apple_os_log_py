@@ -1,10 +1,53 @@
+# Created by https://www.toptal.com/developers/gitignore/api/vscode,python,c++
+# Edit at https://www.toptal.com/developers/gitignore?templates=vscode,python,c++
+
+### C++ ###
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -14,8 +57,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -50,6 +91,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+pytestdebug.log
 
 # Translations
 *.mo
@@ -70,6 +112,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+doc/_build/
 
 # PyBuilder
 target/
@@ -91,6 +134,9 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+# poetry
+#poetry.lock
+
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
@@ -102,13 +148,15 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.venv
+# .env
+.env/
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +175,24 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# operating system-related files
+*.DS_Store #file properties cache/storage on macOS
+Thumbs.db #thumbnail cache on Windows
+
+# profiling data
+.prof
+
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/vscode,python,c++

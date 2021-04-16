@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+# Write your bootstrap code here
+# named_pipe=/tmp/namedPipe
+# rm $named_pipe
+# mkfifo -m 0666 $named_pipe
+# # predicate='sender contains "_os_log"'
+# bash -c "log stream --predicate=python --debug --info --style=ndjson > $named_pipe" &

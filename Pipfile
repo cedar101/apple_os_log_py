@@ -5,6 +5,27 @@ name = "pypi"
 
 [packages]
 cffi = "*"
+loguru = "*"
+fire = "*"
+wrapt = "*"
 
 [dev-packages]
 pipenv-setup = "*"
+apple-os-log-py = {editable = true, path = "."}
+pytest = "*"
+ptpython = "*"
+sh = "*"
+pytest-lazy-fixture = "*"
+autopep8 = "*"
+pyobjc-framework-oslog = "*"
+pytest-xdist = "*"
+pytest-vscodedebug = "*"
+pytest-trio = "*"
+pytest-asyncio = "*"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+test = "./test.sh"
+pytest = "./pytest.sh"

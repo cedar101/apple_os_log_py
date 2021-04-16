@@ -1,6 +1,6 @@
 [[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
+url = "http://mirror.kakao.com/pypi/simple" #"https://pypi.org/simple"
+# verify_ssl = true
 name = "pypi"
 
 [packages]
@@ -11,10 +11,8 @@ wrapt = "*"
 
 [dev-packages]
 pipenv-setup = "*"
-apple-os-log-py = {editable = true, path = "."}
 pytest = "*"
 ptpython = "*"
-sh = "*"
 autopep8 = "*"
 pytest-vscodedebug = "*"
 

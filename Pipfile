@@ -15,6 +15,7 @@ pytest = "*"
 ptpython = "*"
 autopep8 = "*"
 pytest-vscodedebug = "*"
+pytest-cov = "*"
 
 [pipenv]
 allow_prereleases = true

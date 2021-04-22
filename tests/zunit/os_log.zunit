@@ -8,5 +8,5 @@
 @test 'default logger' {
 	python -m os_log.loguru info 'Hello'
 	read line
-	assert "$line" contains 'INFO'
+	assert "$line" contains 'Info'
 }
